@@ -1,0 +1,6 @@
+.card-text{
+    background-color: blue;
+}
+.card-text:hover{
+    background-color: red;
+}

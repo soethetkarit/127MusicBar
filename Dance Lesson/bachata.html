@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachata Dance</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-white .navbar-nav .nav-link:hover {
+            background-color: black;
+        }
+
+        .footer {
+            position: relative;
+        }
+
+        .color-changing-text p {
+            animation: color-changing-animation 3s ease-in-out infinite;
+        }
+
+        @keyframes color-changing-animation {
+            0% {
+                color: white;
+            }
+
+            50% {
+                color: black;
+                /* Change to the color you prefer */
+            }
+
+            100% {
+                color: white;
+            }
+        }
+
+        .btn-collapsible {
+            overflow: hidden;
+            -webkit-transition: all 500ms ease-in-out;
+            -moz-transition: all 500ms ease-in-out;
+            -ms-transition: all 500ms ease-in-out;
+            -o-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
+            max-width: 40px;
+            white-space: nowrap;
+        }
+
+        .btn-collapsible.btn-sm {
+            max-width: 34px;
+        }
+
+        .btn-collapsible span {
+            opacity: 0;
+            text-indent: -6px;
+            display: inline-block;
+            -webkit-transition: all 500ms ease-in-out;
+            -moz-transition: all 500ms ease-in-out;
+            -ms-transition: all 500ms ease-in-out;
+            -o-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
+        }
+
+        .btn-collapsible:hover {
+            max-width: 300px;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+
+        .btn-collapsible:hover span {
+            opacity: 1;
+            text-indent: 0px;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+
+        .hover-effect {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .bachata img {
+            border-top-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+        }
+
+        .join {
+            border-top: 2px solid orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-white py-0 fixed-top d-none d-md-flex"
+            style="background-color: rgba(0, 0, 0, 0.5);">
+            <a class="navbar-brand" href="#"><img src="Images/logo4.jpg" width="320" height="80" class="rounded-2"
+                    alt=""></a>
+            <button class="navbar-toggler" style="background-color: rgba(255, 0, 0, 0.5);" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-primary" href="../index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../myatmon/project - Copy.html"><b>Food &amp; Beverage</b></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-primary" href="#"><b>Store</b></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Project maythuhan/Sept.html"><b>Live Music</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="index dance.html"><b>Dance Lessons</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Nanthinzar/promotion.html"><b>Promotion</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../nnw/index.html"><b>Reservation</b></a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="btn btn-danger btn-sm btn-collapsible" href="../admin/admrole.html"><i class="bi bi-person-fill"></i>
+                            <span>Admin</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-white py-0 fixed-top d-sm-flex d-md-none"
+            style="background-color: rgba(0, 0, 0, 0.5);">
+            <a class="navbar-brand" href="#"><img src="Images/logo4.jpg" width="230" height="60" class="rounded-2"
+                    alt=""></a>
+            <button class="navbar-toggler" style="background-color: rgba(255, 0, 0, 0.5);" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-primary" href="../index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../myatmon/project - Copy.html"><b>Food &amp; Beverage</b></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-primary" href="#"><b>Store</b></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Project maythuhan/Sept.html"><b>Live Music</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="index dance.html"><b>Dance Lessons</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Nanthinzar/promotion.html"><b>Promotion</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../nnw/index.html"><b>Reservation</b></a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="btn btn-danger btn-sm btn-collapsible" href="../admin/admrole.html"><i class="bi bi-person-fill"></i>
+                            <span>Admin</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="bachata col-lg-12 bg-secondary">
+            <div class="row">
+                <div class="col-lg-8">
+                    <img src="Images/bachata-3.jpg" alt="bachata" class="w-100">
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="text-center py-4 text-info">Bachata Dance History</h2>
+                    <p class="text-light"><b>From</b> the late 1990s, dancers in the Western world started creating
+                        novel dance forms inspired by
+                        bachata music. The most well-known example of this is the made-up basic step commonly referred
+                        to as the "side-to-side step", which is sometimes accompanied by an exaggerated "pop” of the
+                        hips during the tap. These novel western dance forms were mostly created copying dance moves
+                        from other partner dances of various origins, Latin and non-Latin alike. Many such dances exist
+                        today, with the first of these often referred to as “Western side basic step”.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="text-center h1">
+                Five Fun Facts About Bachata!
+            </div>
+            <ul>
+                <li>Ballet is over 500 years old! Ballet started in the 1500s in Italy. ...</li>
+                <li>King Louis XIV of France was a ballet enthusiast. ...</li>
+                <li>Originally, women were not allowed to dance in the ballet. ...</li>
+                <li>Professional Tutus can take 60-90 hours to make! ...</li>
+                <li>There are six technical methods of ballet instruction.</li>
+
+            </ul>
+        </div>
+
+        <div class="pic">
+            <h1 class="text-center">Bachata Dance Gallay</h1>
+        </div>
+
+        <div class="row photo">
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="Images/bachata-1.jpg" alt="princess1" class="w-100 pb-2" height="250px">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="Images/bachata-2.png" alt="princess1" class="w-100 pb-2" height="250px">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="Images/bachata-4.jpg" alt="princess1" class="w-100 pb-2" height="250px">
+            </div>
+        </div>
+
+        <div class="join mt-5">
+            <div class="text-center mt-3">
+                <button type="button" class="trbutton btn btn-success border-3" data-bs-toggle="modal"
+                    data-bs-target="#enrollModal">Join Training</button>
+                <div class="modal" id="enrollModal">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title h3 text-black">Join Bachata Dance Training</div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="mb-4">
+                                    <div class="form-group my-2">
+                                        <select class="form-select" id="Batch">
+                                            <option>-----Select Batch-----</option>
+                                            <option>Batch-1</option>
+                                            <option>Batch-2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group my-2">
+                                        <input type="email" name="Email" id="email" class="w-100 rounded border-0 py-2"
+                                            placeholder="Email">
+                                    </div>
+                                    <div class="form-group my-2">
+                                        <input type="text" name="name" id="Name" class="w-100 rounded border-0 py-2"
+                                            placeholder="Enter Your Name">
+                                    </div>
+                                    <div class="form-group my-2">
+                                        <input type="number" name="phno" id="Phone" class="w-100 rounded border-0 py-2"
+                                            placeholder="+959 xxx xxx xxx">
+                                    </div>
+                                    <div class="form-check my-2 text-black text-start">
+                                        <div class="form-check-inline">
+                                            <input type="radio" name="Pay" id="visa" class="form-check-input">
+                                            <label for="visa" class="form-check-label">AYA</label>
+                                        </div>
+                                        <div class="form-check-inline ms-4">
+                                            <input type="radio" name="Pay" id="paypal" class="form-check-input">
+                                            <label for="paypal" class="form-check-label">KBZ Pay</label>
+                                        </div>
+                                    </div>
+                                    <textarea name="message" id="sms" cols="60" rows="5" class="w-100 my-2"
+                                        placeholder="Messages"></textarea>
+                                    <div class="float-end mb-5">
+                                        <button class="btn btn-secondary" type="button"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button class="btn btn-primary" type="button"
+                                            data-bs-dismiss="modal">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="delModal">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary">Be a part of our exclusive club!</h5>
+                        <button data-bs-dismiss="modal">
+                            <i class="bi bi-x"></i></button>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group mt-3">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" placeholder="+959 xxx xxx">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Signup</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="delModal1">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary">GROUP-1 Project Name</h5>
+                        <button data-bs-dismiss="modal">
+                            <i class="bi bi-x"></i></button>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h3 class="text-danger">"127 Music Bar"</h3>
+                        <div class="text-black ps-4 pt-3">
+                            1. U Soe Soe Kyaw <span class="text-primary"><b>(Group Leader)</b></span> <br>
+                            2. Daw Myat Mon Khine <br>
+                            3. Daw Nwe Ni win <br>
+                            4. Daw Nan Thinzar Myint Aung <br>
+                            5. U Zaw Zaw Htet <br>
+                            6. U Pyae Phyo Si <br>
+                            7. Daw May Thu Han <br>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <!-- <div class="modal-footer text-black">
+                       
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="delModal2">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary">Project Period</h5>
+                        <button data-bs-dismiss="modal">
+                            <i class="bi bi-x"></i></button>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body text-black">
+                        <div>Project Identification</div>
+                        <div class="progress my-3" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 25px">
+                            <div class="progress-bar bg-danger" style="width: 20%">2-D</div>
+                        </div>
+                        <div>Job Allocation</div>
+                        <div class="progress my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 25px">
+                            <div class="progress-bar bg-warning text-dark" style="width: 50%">3-D</div>
+                        </div>
+                        <div>Project Implementation</div>
+                        <div class="progress my-3" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 25px">
+                            <div class="progress-bar bg-info text-dark" style="width: 90%">4-D</div>
+                        </div>
+                        <div>Final Test</div>
+                        <div class="progress my-3" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 25px">
+                            <div class="progress-bar bg-success" style="width: 100%">1-D</div>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <!-- <div class="modal-footer text-black">
+                       
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer text-center text-white bg-danger p-1 d-none d-lg-block mt-5">
+            <div class="container position-relative">
+                <div class="position-absolute top-0 end-0 bg-white text-danger p-1 rounded-2 translate-middle-y">
+                    <a href="https://www.google.com/maps/@19.857047,96.1415979,17z?entry=ttu"><button
+                            class="border-0 bg-white me-1"><i class="bi bi-geo-alt-fill"></i></button></a><span
+                        class="h6">No.12, 7<sup>th</sup> Street, Zabuthiri, Naypyitaw</span>
+                </div>
+                <div>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal1">
+                        <i class="bi bi-twitter text-black h4"></i>
+                    </button>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal2">
+                        <i class="bi bi-skype h4 text-white"></i>
+                    </button>
+                    <button class="bg-danger border-0">
+                        <i class="bi bi-facebook text-black h4"></i>
+                    </button>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal">
+                        <i class="bi bi-envelope-at-fill text-white h4"></i>
+                    </button>
+                    <button class="bg-danger border-0">
+                        <i class="bi bi-telephone-fill text-black h4"></i>
+                    </button>
+                </div>
+                <div class="color-changing-text">
+                    <p class="my-1">&copy; 2023 127 Music Bar. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="footer text-center text-white bg-danger p-1 d-lg-none mt-5">
+            <div class="container">
+                <div>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal1">
+                        <i class="bi bi-twitter text-black h4"></i>
+                    </button>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal2">
+                        <i class="bi bi-skype h4 text-white"></i>
+                    </button>
+                    <button class="bg-danger border-0">
+                        <i class="bi bi-facebook text-black h4"></i>
+                    </button>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal">
+                        <i class="bi bi-envelope-at-fill text-white h4"></i>
+                    </button>
+                    <button class="bg-danger border-0">
+                        <i class="bi bi-telephone-fill text-black h4"></i>
+                    </button>
+                </div>
+                <div class="color-changing-text">
+                    <p class="my-1">&copy; 2023 127 Music Bar. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+
+</body>
+
+</html>

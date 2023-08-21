@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width," initial-scale>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+   
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <title>Document</title>
+    <style>
+        img{
+            border-top-right-radius: 50px;
+        }
+        .menu{
+            border-bottom: 2px solid cyan;
+        }
+        /* ...............................................ZZH............................................ */
+        body {
+            background-color: black;
+            color: white;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-white .navbar-nav .nav-link:hover {
+            background-color: black;
+        }
+        .footer {
+            position: relative;
+        }
+        .color-changing-text p {
+            animation: color-changing-animation 3s ease-in-out infinite;
+        }
+        @keyframes color-changing-animation {
+            0% {
+                color: white;
+            }
+            50% {
+                color: black;
+                /* Change to the color you prefer */
+            }
+            100% {
+                color: white;
+            }
+        }
+        .btn-collapsible {
+            overflow: hidden;
+            -webkit-transition: all 500ms ease-in-out;
+            -moz-transition: all 500ms ease-in-out;
+            -ms-transition: all 500ms ease-in-out;
+            -o-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
+            max-width: 40px;
+            white-space: nowrap;
+        }
+        .btn-collapsible.btn-sm {
+            max-width: 34px;
+        }
+        .btn-collapsible span {
+            opacity: 0;
+            text-indent: -6px;
+            display: inline-block;
+            -webkit-transition: all 500ms ease-in-out;
+            -moz-transition: all 500ms ease-in-out;
+            -ms-transition: all 500ms ease-in-out;
+            -o-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
+        }
+        .btn-collapsible:hover {
+            max-width: 300px;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+        .btn-collapsible:hover span {
+            opacity: 1;
+            text-indent: 0px;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+        .hover-effect {
+            transition: transform 0.3s ease-in-out;
+        }
+        .hover-effect:hover {
+            transform: scale(1.05);
+        }
+        /* ............................................ZZH.......................................... */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-white py-0 fixed-top d-none d-md-flex"
+            style="background-color: rgba(0, 0, 0, 0.5);">
+            <a class="navbar-brand" href="#"><img src="../logo4.jpg" width="320" height="80" class="rounded-2" alt=""></a>
+            <button class="navbar-toggler" style="background-color: rgba(255, 0, 0, 0.5);" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-primary" href="../index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="project - Copy.html"><b>Food &amp; Beverage</b></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-primary" href="#"><b>Store</b></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Project maythuhan/Sept.html"><b>Live Music</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Dance Lesson/index dance.html"><b>Dance Lessons</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Nanthinzar/promotion.html"><b>Promotion</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../nnw/index.html"><b>Reservation</b></a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="btn btn-danger btn-sm btn-collapsible" href="../admin/admrole.html"><i class="bi bi-person-fill"></i>
+                            <span>Admin</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-white py-0 fixed-top d-sm-flex d-md-none"
+            style="background-color: rgba(0, 0, 0, 0.5);">
+            <a class="navbar-brand" href="#"><img src="../logo4.jpg" width="230" height="60" class="rounded-2" alt=""></a>
+            <button class="navbar-toggler" style="background-color: rgba(255, 0, 0, 0.5);" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-primary" href="../index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="project - Copy.html"><b>Food &amp; Beverage</b></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-primary" href="#"><b>Store</b></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Project maythuhan/Sept.html"><b>Live Music</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Dance Lesson/index dance.html"><b>Dance Lessons</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../Nanthinzar/promotion.html"><b>Promotion</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../nnw/index.html"><b>Reservation</b></a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="btn btn-danger btn-sm btn-collapsible" href="../admin/admrole.html"><i class="bi bi-person-fill"></i>
+                            <span>Admin</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navigation -->
+        <div class="menu mb-2">
+            <h3 class="text-center py-2 text-warning">BEVERAGE MENU OF 127 MUSIC BAR</h3>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 pb-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <img src="images/drink/1(13).webp" alt="menu" class="w-100" height="200px">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pt-5">
+                    <h2 class="text-center">COTAILS</h2>
+                    <p class="text-center">Aliquam purus, congue a gravida ac, facilisis vel erat.
+                        Mawcenas pretium sem.</p>
+                        <p class="text-end text-warning bg-secondary py-2 pe-2"><b>Price for That >>> 10 $</b></p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <img src="images/drink/1(14).webp" alt="menu" class="w-100" height="200px">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pt-5">
+                    <h2 class="text-center">COTAILS</h2>
+                    <p class="text-center">Aliquam purus, congue a gravida ac, facilisis vel erat.
+                        Mawcenas pretium sem.</p>
+                        <p class="text-end text-warning bg-secondary py-2 pe-2"><b>Price for That >>> 12 $</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-lg-12 col-sm-12 pb-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pt-5">
+                    <h2 class="text-center">FRUIT JUICE</h2>
+                    <p class="text-center">Aliquam purus, congue a gravida ac, facilisis vel erat.
+                        Mawcenas pretium sem.</p>
+                        <p class="text-end text-warning bg-secondary py-2 pe-2"><b>Price for That >>> 15 $</b></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <img src="images/drink/1(28).jpg" alt="menu" class="w-100" height="200px">
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pt-5">
+                    <h2 class="text-center">SHANPAIN</h2>
+                    <p class="text-center">Aliquam purus, congue a gravida ac, facilisis vel erat.
+                        Mawcenas pretium sem.</p>
+                        <p class="text-end text-warning bg-secondary py-2 pe-2"><b>Price for That >>> 20 $</b></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <img src="images/drink/1(18).webp" alt="menu" class="w-100" height="200px">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 pb-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <img src="images/drink/1(34).jpg" alt="menu" class="w-100" height="200px">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pt-5">
+                    <h2 class="text-center">WINE</h2>
+                    <p class="text-center">Aliquam purus, congue a gravida ac, facilisis vel erat.
+                        Mawcenas pretium sem.</p>
+                        <p class="text-end text-warning bg-secondary py-2 pe-2"><b>Price for That >>> 18 $</b></p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <img src="images/drink/1(35).jpg" alt="menu" class="w-100" height="200px">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pt-5">
+                    <h2 class="text-center">GRAPE WINE</h2>
+                    <p class="text-center">Aliquam purus, congue a gravida ac, facilisis vel erat.
+                        Mawcenas pretium sem.</p>
+                        <p class="text-end text-warning bg-secondary py-2 pe-2"><b>Price for That >>> 25 $</b></p>
+                </div>
+            </div>
+        </div>
+        <!--..................... Footer .........................-->
+        <div class="modal fade" id="delModal">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary">Be a part of our exclusive club!</h5>
+                        <button data-bs-dismiss="modal">
+                            <i class="bi bi-x"></i></button>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group mt-3">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" placeholder="+959 xxx xxx">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Signup</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="delModal1">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary">GROUP-1 Project Name</h5>
+                        <button data-bs-dismiss="modal">
+                            <i class="bi bi-x"></i></button>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h3 class="text-danger">"127 Music Bar"</h3>
+                        <div class="text-black ps-4 pt-3">
+                            1. U Soe Soe Kyaw <span class="text-primary"><b>(Group Leader)</b></span> <br>
+                            2. Daw Myat Mon Khine <br>
+                            3. Daw Nwe Ni win <br>
+                            4. Daw Nan Thinzar Myint Aung <br>
+                            5. U Zaw Zaw Htet <br>
+                            6. U Pyae Phyo Si <br>
+                            7. Daw May Thu Han <br>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <!-- <div class="modal-footer text-black">
+                       
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="delModal2">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary">Project Period</h5>
+                        <button data-bs-dismiss="modal">
+                            <i class="bi bi-x"></i></button>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body text-black">
+                        <div>Project Identification</div>
+                        <div class="progress my-3" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 25px">
+                            <div class="progress-bar bg-danger" style="width: 20%">2-D</div>
+                        </div>
+                        <div>Job Allocation</div>
+                        <div class="progress my-3" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 25px">
+                            <div class="progress-bar bg-warning text-dark" style="width: 50%">3-D</div>
+                        </div>
+                        <div>Project Implementation</div>
+                        <div class="progress my-3" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 25px">
+                            <div class="progress-bar bg-info text-dark" style="width: 90%">4-D</div>
+                        </div>
+                        <div>Final Test</div>
+                        <div class="progress my-3" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 25px">
+                            <div class="progress-bar bg-success" style="width: 100%">1-D</div>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <!-- <div class="modal-footer text-black">
+                       
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer text-center text-white bg-danger p-1 d-none d-lg-block mt-2">
+            <div class="container position-relative">
+                <div class="position-absolute top-0 end-0 bg-white text-danger p-1 rounded-2 translate-middle-y">
+                    <a href="https://www.google.com/maps/@19.857047,96.1415979,17z?entry=ttu"><button
+                            class="border-0 bg-white me-1"><i class="bi bi-geo-alt-fill"></i></button></a><span
+                        class="h6">No.12, 7<sup>th</sup> Street, Zabuthiri, Naypyitaw</span>
+                </div>
+                <div>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal1">
+                        <i class="bi bi-twitter text-black h4"></i>
+                    </button>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal2">
+                        <i class="bi bi-skype h4 text-white"></i>
+                    </button>
+                    <button class="bg-danger border-0">
+                        <i class="bi bi-facebook text-black h4"></i>
+                    </button>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal">
+                        <i class="bi bi-envelope-at-fill text-white h4"></i>
+                    </button>
+                    <button class="bg-danger border-0">
+                        <i class="bi bi-telephone-fill text-black h4"></i>
+                    </button>
+                </div>
+                <div class="color-changing-text">
+                    <p class="my-1">&copy; 2023 127 Music Bar. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="footer text-center text-white bg-danger p-1 d-lg-none mt-2">
+            <div class="container">
+                <div>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal1">
+                        <i class="bi bi-twitter text-black h4"></i>
+                    </button>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal2">
+                        <i class="bi bi-skype h4 text-white"></i>
+                    </button>
+                    <button class="bg-danger border-0">
+                        <i class="bi bi-facebook text-black h4"></i>
+                    </button>
+                    <button class="bg-danger border-0" data-bs-toggle="modal" data-bs-target="#delModal">
+                        <i class="bi bi-envelope-at-fill text-white h4"></i>
+                    </button>
+                    <button class="bg-danger border-0">
+                        <i class="bi bi-telephone-fill text-black h4"></i>
+                    </button>
+                </div>
+                <div class="color-changing-text">
+                    <p class="my-1">&copy; 2023 127 Music Bar. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- ..................footer.................... -->
+    </div>    
+</body>
+
+</html>
